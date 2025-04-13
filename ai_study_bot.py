@@ -1,16 +1,12 @@
-
+import streamlit as st
 import os
-print(os.environ.get('OPENAI_API_KEY')) 
+import openai
 
 
 _open_ai_tkn = os.environ.get('OPENAI_API_KEY')
 _project_tkn = os.environ.get('OPENAI_PROJECT')
 _organisation_tkn = os.environ.get('OPENAI_ORG')
-print(_open_ai_tkn)
 
-import openai
-import os
-from openai import OpenAI
 
 client = openai.OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
